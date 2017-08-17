@@ -8,16 +8,16 @@ hello.c
 #include "syscall.h"
 #include "syscall_nums.h"
 
-DEFN_SYSCALL3(SYS_WRITE, int, char *, int);
-
 void _start()
 {
 	syscall_write(1, "Hello World\n", 12);
 }
+
+DEFN_SYSCALL3(write, SYS_WRITE, int, char *, int);
 ```
 
 ```
-$ gcc hello.c -c
+$ gcc -m32 -O3 hello.c -c
 $ ld hello.o
 $ ./a.out
 ```
