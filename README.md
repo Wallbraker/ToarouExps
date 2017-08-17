@@ -1,4 +1,4 @@
-# ToarouExps
+# ToaruExps
 
 Experiments for ToaruOS (とあるOS), how to make a elf *"static"* binary.
 
