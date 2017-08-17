@@ -28,7 +28,7 @@ static DEFN_SYSCALL3(write, SYS_WRITE, int, char *, int);
 On the host that has clang and lld installed do:
 ```bash
 $ clang -target "i686-pc-none-elf" -O3 -c hello.c
-$ ld hello.o
+$ ld.lld hello.o
 $ python -m SimpleHTTPServer 8000
 ```
 
